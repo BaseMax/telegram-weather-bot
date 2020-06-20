@@ -4,6 +4,11 @@ A telegram bot to sending weather information daily in some channels.
 
 Using PHP and getting information from a API (weatherstack.com)
 
+### Depends on
+
+- https://github.com/BaseMax/TinyTelegramBotPHP
+- https://github.com/BaseMax/NetPHP
+
 ---------
 
 # Max Base
