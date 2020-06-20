@@ -19,18 +19,18 @@ $chatID=[
 	'***', // Support Team, User ID
 	$ch,
 ];
-$res='🌤  وضعیت آب و هوا امروز
+$res='🌤  The weather today
 
-🔻 شهر: '.$res["location"]["name"].', '.$res["location"]["country"].'
+🔻 City: '.$res["location"]["name"].', '.$res["location"]["country"].'
 
-🔸 دما: '.$res["current"]["temperature"].' سانتی گراد
-🔸 پیشبیتی: '.$res["current"]["weather_descriptions"][0].'
-🔸 سرعت باد: '.$res["current"]["wind_speed"].'
-🔸 دمایی که احساس میشود:  '.$res["current"]["feelslike"].' سانتی گراد
-🔸 جهت وزش باد:  '.$res["current"]["wind_degree"].' '.$res["current"]["wind_dir"].'
-🔸 ساعت: '.$res["current"]["observation_time"].'
+🔸 Temperature: '.$res["current"]["temperature"].' سانتی گراد
+🔸 Weather forecast: '.$res["current"]["weather_descriptions"][0].'
+🔸 Wind speed: '.$res["current"]["wind_speed"].'
+🔸 Sensible temperature:  '.$res["current"]["feelslike"].' سانتی گراد
+🔸 Wind direction:  '.$res["current"]["wind_degree"].' '.$res["current"]["wind_dir"].'
+🔸 Time: '.$res["current"]["observation_time"].'
 
-* این پیام به صورت خودکار روزانه در همین ساعت در کانال ارسال میشود
+* This message is automatically sent daily to the channel at the same time
 🔴 ';
 foreach($chatID as $chat) {
 	$ress=$res;
